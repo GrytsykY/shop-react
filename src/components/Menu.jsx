@@ -14,7 +14,7 @@ const CartComponent = ({name, id, image, count, removeFromCart}) => (
 )
 
 const MenuComponent = ({ totalPrice, count, items }) => (
-
+  
   <Menu>
     <Menu.Item>
       Магазин продуктов
