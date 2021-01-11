@@ -12,13 +12,11 @@ export default (state = initialState, action) => {
         items: action.payload,
         isReady: true
       }
-      break;
     case 'SET_IS_READY':
       return{
         ...state,
         isReady: action.payload
       }
-      break;
     default:
       return state
   }
