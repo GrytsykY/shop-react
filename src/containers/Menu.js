@@ -5,12 +5,7 @@ import Menu from '../components/Menu';
 import uniqBy from 'lodash/unionBy';
 import { isEmpty } from 'lodash'
 
-// const mapStateToProps = ({ cart }) => ({
-//   totalPrice: cart.items.reduce((total, product) =>
-//     total + product.price, 0),
-//   count: cart.items.length,
-//   items: uniqBy(cart.items, o => o.id),
-// })
+
 
 const mapStateToProps = ({ cart }) => {
   let total = null;
