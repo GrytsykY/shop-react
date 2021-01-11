@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1, 
+    "name": "Бананы", 
+    "image": "https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3230-3862-4039-b139-343530613431__bananas-1354785_1280.jpg",
+    "price": 10,
+    "discount": false, 
+    "weight": 30
+  },
+  {
+    "id": 2, 
+    "name": "Яблоки", 
+    "image": "https://static9.depositphotos.com/1049691/1080/i/600/depositphotos_10805914-stock-photo-fresh-apples.jpg",
+    "price": 8, 
+    "discount": false,
+    "weight": 40
+  },
+  {
+    "id": 3, 
+    "name": "Папайя",
+    "image": "https://fruit-boutique.com.ua/content/images/42/papayya-formoza-korolevskaya-29779532261590_small11.jpg",
+    "price": 10,
+    "discount": true, 
+    "weight": 50
+  },
+  {
+    "id": 4, 
+    "name": "Лимоны", 
+    "image": "https://st.depositphotos.com/1020804/2370/i/600/depositphotos_23707225-stock-photo-lemons-with-leaves.jpg",
+    "price": 5, 
+    "discount": false,
+    "weight": 30
+  },
+  {
+    "id": 5, 
+    "name": "Манго", 
+    "image": "https://dgdesign.ru/uploads/posts/2018-07/1531848687_65765421.png",
+    "price": 6, 
+    "discount": false,
+    "weight": 40
+  },
+  {
+    "id": 6, 
+    "name": "Апельсины",
+    "image": "https://img2.zakaz.ua/novus20200928.1603114032.ad72436478c_2020-10-20_Alina/novus20200928.1603114032.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.350nowm.jpg.350x.jpg",
+    "price": 4, 
+    "discount": false,
+    "weight": 50
+  }
+]
