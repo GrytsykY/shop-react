@@ -1,12 +1,12 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as productsActions from '../actions/products'
-import App from '../components/App'
+import Products from '../components/Products'
 
 
 const mapStateToProps = ( {products} ) => ({
   products: products.items,
-  isReady: products.isReady,
+  isReady: products.isReady
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -16,4 +16,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(App)
+)(Products)

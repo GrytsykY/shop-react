@@ -1,30 +1,26 @@
-import axios from 'axios';
 import React, { Component } from 'react';
-import { Card, Container } from 'semantic-ui-react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Products from '../containers/Products';
+import BasketCart from '../containers/BasketCart';
 import Menu from '../containers/Menu';
-import ProductCard from '../containers/ProductCart';
+import { Container } from '@material-ui/core';
 
 class App extends Component {
-  componentWillMount() {
-    const { setProducts } = this.props;
-    axios.get('/products.json').then(({ data }) => {
-      setProducts(data);
-    })
-  }
-
   render() {
-    const { products, isReady } = this.props; 
     return (
-      <Container>
-        <Menu />
-      
-        <Card.Group>
-          { 
-            !isReady ? 'Загрузка...' :
-            products.map((product,i) => <ProductCard key={i} {...product}/>)
-          }
-        </Card.Group>
-      </Container>
+      <Router>
+        <Container>
+          <Switch>
+            <Route exact path="/">
+              <Menu />
+              <Products />
+            </Route>
+            <Route path="/basket" >
+              <BasketCart />
+            </Route>
+          </Switch>
+        </Container>
+      </Router>
     );
   }
 }
