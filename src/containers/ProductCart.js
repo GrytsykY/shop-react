@@ -1,11 +1,10 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
 import * as cartActions from '../actions/cart';
-import ProductCart from '../components/ProductCart'
+import ProductCart from '../components/ProductCart';
 
-const mapStateToProps = ({ cart }, { id }) => ({
-  addedCount: cart.items.reduce(
-    (count, product) => count + (product.id === id ? 1 : 0),0)
+const mapStateToProps = ({ cart }) => ({
+  items: cart.items
 })
 
 const mapDispatchToProps = dispatch => ({

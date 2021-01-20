@@ -6,7 +6,7 @@ import Products from '../components/Products'
 
 const mapStateToProps = ( {products} ) => ({
   products: products.items,
-  isReady: products.isReady,
+  isReady: products.isReady
 })
 
 const mapDispatchToProps = dispatch => ({
